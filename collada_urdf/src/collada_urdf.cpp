@@ -1938,6 +1938,7 @@ ColladaUrdfException::ColladaUrdfException(std::string const& what)
 }
 
 bool WriteUrdfModelToColladaFile(urdf::Model const& robot_model, string const& file) {
+    std::cout << "Ferrolho's collada_urdf.cpp is rolling" << std::endl;
     ColladaWriter writer(robot_model, 0);
     if ( ! writer.convert() ) {
         std::cerr << std::endl << "Error converting document" << std::endl;

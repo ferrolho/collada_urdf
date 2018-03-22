@@ -50,6 +50,8 @@ int main(int argc, char** argv)
         return -1;
     }
 
+    std::cout << std::endl << "Ferrolho's urdf_to_collada.cpp is rolling" << std::endl;
+
     ros::init(argc, argv, "urdf_to_collada");
 
     std::string input_filename(argv[1]);
